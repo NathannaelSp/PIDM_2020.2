@@ -1,11 +1,19 @@
 import React, {Component} from 'react'
 import {StyleSheet,View,Text, Button} from 'react-native'
 
+
 export default class Sobre extends Component{
     render(){
         return(
             <View style={estilos.container}>
-                <Text style={estilos.texto}>Página Sobre</Text>
+                <Text style={estilos.texto}>
+                    Sou estudante de Design Digital, especializado em Identidade visual.
+                    <br>
+                    </br>
+                    <br>
+                    </br>
+                    Aplicação designada para a cadeira de PIDM.
+                </Text>
             </View>
         )
     }
@@ -16,11 +24,13 @@ const estilos = StyleSheet.create({
         flex:1,
         flexDirection: 'column',
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+        padding:10
     },
     texto:{
-        fontSize:22,
+        fontSize:20,
         fontWeight:'bold',
-        fontFamily:'Arial'
+        fontFamily:'Arial',
+        padding:10
     }
 })

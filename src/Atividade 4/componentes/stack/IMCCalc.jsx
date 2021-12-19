@@ -1,6 +1,7 @@
 import React from "react";
 import{View,Text} from 'react-native';
-import MensagemIMC from "./IMCMsg";
+import MensagemIMC from "./IMCMesssage";
+
 
 const IMCCalc = (props) => {
 
@@ -12,6 +13,7 @@ const IMCCalc = (props) => {
                 <Text style={{fontSize:34, fontWeight:"bold"}}>
                     IMC:{imc}
                 </Text>
+
                 <MensagemIMC IMC={imc}/>
             </View>
         )

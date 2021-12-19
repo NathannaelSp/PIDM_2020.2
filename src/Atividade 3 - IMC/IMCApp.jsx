@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import {View,Text,TextInput,Button} from 'react-native'
 import IMCCalc from './IMCCalc';
 
+
+
 export default class IMCApp extends Component {
     constructor(props){
         super(props)
