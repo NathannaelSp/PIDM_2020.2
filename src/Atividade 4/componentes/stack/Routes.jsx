@@ -8,33 +8,41 @@ import {NavigationContainer} from '@react-navigation/native'
 import {createStackNavigator} from '@react-navigation/stack'
 
 
-const Pilha = createStackNavigator()
+import EditUserScreen from "../../../Atividade 5/components/crud/EditUserScreen"
+import AddUserScreen from "../../../Atividade 5/components/crud/AddUserScreen";
+import ListUserScreen from "../../../Atividade 5/components/crud/ListUserScreen";
 
-function Routes(){
+const MainStack = createStackNavigator()
+
+function MainStackScreen(){
     return(
         <NavigationContainer>
-            <Pilha.Navigator
-                initialRouteName='Home'
-            >
-                <Pilha.Screen
-                    name='Home'
-                    component={Home}
-                    options={{title:'ATV.4'}}
-                />
-                <Pilha.Screen
-                    name='Cadastro'
-                    component={Cadastro}
-                />
-                <Pilha.Screen
-                    name='IMC'
-                    component={IMC}
-                />
-                <Pilha.Screen
-                    name='Sobre'
-                    component={Sobre}
-                />
+            <MainStack.Navigator initialRouteName='NavegadorApp'>
+                    <MainStack.Screen
+                        name='NavegadorApp'
+                        component={NavegadorApp}
+                        options={{title: 'Home'}}
+                    />
+
+                    <MainStack.Screen
+                        name='AddUserScreen'
+                        component={AddUserScreen}
+                        options={{title: 'Add New User'}}
+                    />
+                    
+                    <MainStack.Screen
+                        name='ListUserScreen'
+                        component={ListUserScreen}
+                        options={{title: 'List Users'}}
+                    />
+                    
+                    <MainStack.Screen
+                        name='EditUserScreen'
+                        component={EditUserScreen}
+                        options={{title: 'Edit User'}}
+                    />
                 
-            </Pilha.Navigator>
+            </MainStack.Navigator>
         </NavigationContainer>
     )
 }

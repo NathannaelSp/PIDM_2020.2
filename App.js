@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 /*import { StyleSheet, Text, View } from 'react-native';*/
 
@@ -41,7 +41,7 @@ export default function App() {
 } */
 
 
-/*-----Atividade 4------*/
+/*-----Atividade 4------
 import { StyleSheet,View,Text } from "react-native";
 import {SafeAreaProvider} from 'react-native-safe-area-context'
 import Routes from './src/Atividade 4/componentes/stack/Routes';
@@ -52,7 +52,25 @@ const App = ()=>
 </SafeAreaProvider>
 
 
+export default App*/
+
+/*-----Atividade 5-----*/
+import React from 'react';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Routes from '../introducao/src/Atividade 5/components/crud/Routes'
+
+const App = ()=>
+<SafeAreaProvider>
+  <Routes/>
+</SafeAreaProvider>
+
 export default App
+
+
+
+
+
+
 
 
 
@@ -72,9 +90,6 @@ export default App
     <BotaoInput/>
   );
 } */
-
-
-
 
 
 /*export default function App(){
